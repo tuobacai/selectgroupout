@@ -1,9 +1,17 @@
 # coding:utf-8
 from util.redisinfos import excute
-from util.loader import Loader
+
 class OriginalFeatures():
-    def __init__(self):
-        self.loader=Loader()
+
+    def load(self):
+        oids=[]
+        oidfile = '/Users/yingjie10/PycharmProjects/selectgroupout/oidfile.txt'
+        files = open(oidfile, 'r')
+        for line in files:
+            oid=line.strip()
+            oids.append(oid)
+        return oids
+
     def extractfea(self,oids):
         redisinfos=excute(oids)
         i=int(0)
@@ -14,5 +22,7 @@ class OriginalFeatures():
         return
 if __name__=='__main__':
     fea=OriginalFeatures()
-    fea.loader.read()
-    fea.extractfea(fea.loader.alloids)
+    oids=fea.load()
+    fea.extractfea(oids)
+
+    # fea.extractfea(fea.loader.alloids)

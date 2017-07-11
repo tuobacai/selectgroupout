@@ -38,9 +38,24 @@ class Loader():
                 label=int(temp[1])
                 grouplist.append((oid,label))
             self.group2oids[gid]=grouplist
+    def output(self):
+        labelfile='/Users/yingjie10/PycharmProjects/selectgroupout/labelfile.txt'
+        file=open(labelfile,'w')
+        oidfile='/Users/yingjie10/PycharmProjects/selectgroupout/oidfile.txt'
+        files = open(oidfile, 'w')
+        for gid in self.group2oids:
+            for ts in self.group2oids[gid]:
+                (oid, label)=ts
+                file.write(str(gid)+','+str(oid)+','+str(label)+'\n')
+        file.close()
+        for oid in self.alloids:
+            files.write(str(oid)+'\n')
+        files.close()
+
 
 
 
 if __name__=='__main__':
     loader=Loader()
     loader.read()
+    loader.output()
