@@ -14,12 +14,15 @@ class OriginalFeatures():
 
     def extractfea(self,oids):
         redisinfos=excute(oids)
-        i=int(0)
+        feafile= '/Users/yingjie10/PycharmProjects/selectgroupout/feafile.txt'
+        files = open(feafile, 'w')
         for oid in redisinfos:
-            i+=1
-            if i<10:
-                print 'info:',oid,redisinfos[oid]
-        return
+            files.write(oid+'\n')
+            files.write(str(redisinfos[oid])+'\n')
+        files.close()
+    def excute(self):
+        oids = self.load()
+        self.extractfea(oids)
 if __name__=='__main__':
     fea=OriginalFeatures()
     oids=fea.load()
