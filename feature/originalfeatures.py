@@ -5,7 +5,7 @@ class OriginalFeatures():
 
     def load(self):
         oids=[]
-        oidfile = '/Users/yingjie10/PycharmProjects/selectgroupout/oidfile.txt'
+        oidfile = '/data1/yingjie10/selectgroupout/oidfile.txt'
         files = open(oidfile, 'r')
         for line in files:
             oid=line.strip()
@@ -14,10 +14,10 @@ class OriginalFeatures():
 
     def extractfea(self,oids):
         redisinfos=excute(oids)
-        feafile= '/Users/yingjie10/PycharmProjects/selectgroupout/feafile.txt'
+        feafile= '/data1/yingjie10/selectgroupout/feafile.txt'
         files = open(feafile, 'w')
         for oid in redisinfos:
-            files.write(oid+'\n')
+            files.write(oid+';')
             files.write(str(redisinfos[oid])+'\n')
         files.close()
     def excute(self):
