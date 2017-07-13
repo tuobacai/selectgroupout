@@ -20,31 +20,25 @@ class FeatureHandler():
 
     def excute(self):
         self._extract_original()
-        self.featurediff.oids2info(self.oid2info)
-        i=int(0)
-        for oid in self.oid2info:
-            i+=1
-            if i<3:
-                print oid
-                print self.oid2info[oid]
+        self.featurediff.extract_diff(self.oid2info)
+        self.output()
 
     def output(self):
-        trainfile = '/data1/yingjie10/selectgroupout/data/trainfea.txt'
+        trainfile = '/data1/yingjie10/selectgroupout/data/traindata.txt'
         file = open(trainfile, 'w')
         i = int(0)
+        keyname=[]
         for oid in self.oid2info:
-            info=self.oid2info[oid]
             i += 1
+            info=self.oid2info[oid]
             label = info['label']
-            keyname = [key for key in info.keys() if key != 'label' and key != 'oid' and key != 'gid']
+            gid=info['gid']
             if i == 1:
-                file.write(
-                    'label,oid,gid,' + str(keyname).replace('[', '').replace(']', '').replace("'", '') + '\n')
+                keyname = [key for key in info.keys() if key != 'label' and key != 'oid' and key != 'gid']
+                file.write('label,oid,gid,' + str(keyname).replace('[', '').replace(']', '').replace("'", '') + '\n')
             keyvalue = [info[key] for key in keyname]
-            file.write(
-                str(label) + ',' + str(oid) + "," + str(gid) + "," + str(keyvalue).replace('[', '').replace(']',
-                                                                                                            '').replace(
-                    "'", '') + '\n')
+            file.write(str(label) + ',' + str(oid) + "," + str(gid) + "," +
+                       str(keyvalue).replace('[', '').replace(']','').replace("'", '') + '\n')
         file.close()
 
 if __name__=='__main__':

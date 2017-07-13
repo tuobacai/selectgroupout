@@ -17,7 +17,8 @@ class FeatureDiff():
     提取组差异特征
     '''
     def handlefea(self):
-        name = [' wbfc', 'c', ' i', ' wbcc', ' imn', ' len', ' sscore', ' nfb', ' wrn', ' vpc', ' wcn', ' wbrc']
+        name = ['wbfc', 'c', ' i', 'wbcc', ' imn', ' len', ' sscore', ' nfb', ' wrn', ' vpc', ' wcn', ' wbrc']
+        name=[key.strip() for key in name]
         for gid in self.gid2oids:
             sumdict=dict()
             for t in name:
