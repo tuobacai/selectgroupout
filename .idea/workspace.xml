@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cb694-8009-4519-8819-e3ab10642777" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelhandler.py" afterPath="$PROJECT_DIR$/modelhandler.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/articleselect.py" />
     </list>
     <ignored path="selectgroupout.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,8 +28,8 @@
           <file leaf-file-name="testb.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/classify/logisticmodel/testb.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
                   <folding>
                     <element signature="e#16#35#0" expanded="true" />
                   </folding>
@@ -54,13 +53,25 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="modelhandler.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="modelhandler.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/modelhandler.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="748">
                   <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
                   <folding>
                     <element signature="e#14#33#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="articleselect.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/articleselect.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#14#55#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -113,10 +124,11 @@
         <option value="$PROJECT_DIR$/classify/logisticregression/testSet.txt" />
         <option value="$PROJECT_DIR$/classify/logisticregression/test.py" />
         <option value="$PROJECT_DIR$/classify/logisticregression/testa.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/classify/logisticmodel/logisticregression.py" />
         <option value="$PROJECT_DIR$/classify/logisticmodel/testb.py" />
         <option value="$PROJECT_DIR$/modelhandler.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/articleselect.py" />
       </list>
     </option>
   </component>
@@ -274,7 +286,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="selectgroupout" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/articleselect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -606,16 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classify/logisticmodel/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -654,22 +656,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classify/logisticmodel/testb.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="e#16#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modelhandler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="52" column="34" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
           <folding>
             <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classify/logisticmodel/testb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#16#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articleselect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
