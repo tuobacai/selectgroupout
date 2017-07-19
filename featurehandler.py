@@ -18,11 +18,6 @@ class FeatureHandler():
                 info.update(redisinfos[oid])
         self.oid2info=labelres
 
-    def excute(self):
-        self._extract_original()
-        self.featurediff.extract_diff(self.oid2info)
-        self.output()
-
     def output(self):
         trainfile = '/data1/yingjie10/selectgroupout/data/traindata.txt'
         file = open(trainfile, 'w')
@@ -40,6 +35,12 @@ class FeatureHandler():
             file.write(str(label) + ',' + str(oid) + "," + str(gid) + "," +
                        str(keyvalue).replace('[', '').replace(']','').replace("'", '') + '\n')
         file.close()
+
+    def excute(self):
+        self._extract_original()
+        self.featurediff.extract_diff(self.oid2info)
+        return self.oid2info
+
 
 if __name__=='__main__':
     handler=FeatureHandler()
