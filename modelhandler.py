@@ -15,11 +15,11 @@ class ModelHandler(object):
         for oid in self.oid2info:
             info=self.oid2info[oid]
             label=info['label']
-            labels.append(label)
-            forbidname=['gid','label']
+            labels.append(float(label))
+            forbidname=['oid','gid','label']
             feaname=[key for key in self.oid2info.keys() if key not in forbidname]
-            fea=[info[key] for key in feaname]
-            fea.append(1.0)
+            fea=[float(info[key]) for key in feaname]
+            fea.insert(0, float(1))
             feas.append(fea)
         return mat(feas),mat(labels).transpose()
     '''
