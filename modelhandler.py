@@ -44,7 +44,12 @@ class ModelHandler(object):
     def saver(self):
         modelfile = '/data1/yingjie10/selectgroupout/model/lrmodel.txt'
         file = open(modelfile, 'w')
-        file.write(str(self.optimalWeights)+'\n')
+        weights=[]
+        optimalWeights=self.optimalWeights.tolist()
+        for arr in optimalWeights:
+            w=arr[0]
+            weights.append(w)
+        file.write(str(weights)+'\n')
         file.close()
 
     def excute(self,oid2info):

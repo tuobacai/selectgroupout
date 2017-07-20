@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="724cb694-8009-4519-8819-e3ab10642777" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/logisticmodel/test.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/logisticmodel/testSet.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/logisticmodel/testa.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/classify/logisticmodel/testb.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/classify/logisticmodel/logisticregression.py" afterPath="$PROJECT_DIR$/classify/logisticmodel/logisticregression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelhandler.py" afterPath="$PROJECT_DIR$/modelhandler.py" />
     </list>
     <ignored path="selectgroupout.iws" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="modelhandler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelhandler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+            <state relative-caret-position="780">
+              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
               <folding>
                 <element signature="e#14#33#0" expanded="true" />
               </folding>
@@ -39,14 +36,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logisticregression.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="articleselect.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/articleselect.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#14#55#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="featurehandler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/featurehandler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding>
+                <element signature="e#15#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logisticregression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classify/logisticmodel/logisticregression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-              <folding>
-                <element signature="e#14#33#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,11 +115,11 @@
         <option value="$PROJECT_DIR$/classify/logisticregression/testSet.txt" />
         <option value="$PROJECT_DIR$/classify/logisticregression/test.py" />
         <option value="$PROJECT_DIR$/classify/logisticregression/testa.py" />
-        <option value="$PROJECT_DIR$/classify/logisticmodel/logisticregression.py" />
         <option value="$PROJECT_DIR$/classify/logisticmodel/testb.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/articleselect.py" />
         <option value="$PROJECT_DIR$/modelhandler.py" />
+        <option value="$PROJECT_DIR$/classify/logisticmodel/logisticregression.py" />
       </list>
     </option>
   </component>
@@ -519,13 +538,6 @@
     <entry file="file://$PROJECT_DIR$/classify/fm/test/data/diabetes_train.txt" />
     <entry file="file://$PROJECT_DIR$/classify/fm/test/data/diabetes_test.txt" />
     <entry file="file://$PROJECT_DIR$/classify/gbdt/GBDT-test/data/credit.data.csv" />
-    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classify/gbdt/GBDT-test/startup.py" />
     <entry file="file://$PROJECT_DIR$/labelfile.txt" />
     <entry file="file://$PROJECT_DIR$/oidfile.txt" />
@@ -586,6 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
           <caret line="1241" column="0" selection-start-line="1241" selection-start-column="0" selection-end-line="1241" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -618,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/featurehandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/traindata.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
@@ -633,31 +639,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/articleselect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#14#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/classify/logisticmodel/testb.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="48" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modelhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="35" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-          <folding>
-            <element signature="e#14#33#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -671,10 +657,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/classify/logisticmodel/logisticregression.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/featurehandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding>
+            <element signature="e#15#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadMe.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modelhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
           <folding>
             <element signature="e#14#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/articleselect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#55#0" expanded="true" />
           </folding>
         </state>
       </provider>
