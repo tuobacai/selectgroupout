@@ -17,7 +17,7 @@ class ModelHandler(object):
             label=info['label']
             labels.append(float(label))
             forbidname=['oid','gid','label']
-            feaname=[key for key in self.oid2info.keys() if key not in forbidname]
+            feaname=[key for key in info.keys() if key not in forbidname]
             fea=[float(info[key]) for key in feaname]
             fea.insert(0, float(1))
             feas.append(fea)
@@ -37,17 +37,19 @@ class ModelHandler(object):
         test_x, test_y = self.loaddata()
         accuracy = self.logistic.testLogRegres(self.optimalWeights, test_x, test_y)
         print 'The classify accuracy is: %.3f%%' % (accuracy * 100)
-    '''
-    分类结果可视化
-    '''
-    def show(self):
-        train_x, train_y = self.loaddata()
-        self.logistic.showLogRegres(self.optimalWeights, train_x, train_y)
 
+    '''
+    模型存储
+    '''
+    def saver(self):
+        modelfile = '/data1/yingjie10/selectgroupout/model/lrmodel.txt'
+        file = open(modelfile, 'w')
+        file.write(str(self.optimalWeights)+'\n')
+        file.close()
 
     def excute(self,oid2info):
         self.oid2info=oid2info
         self.train()
         self.validate()
-        self.show()
+        self.saver()
         return self.optimalWeights
